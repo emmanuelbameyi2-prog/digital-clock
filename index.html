@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.3s ease;
+        }
+        button {
+            height: 80px;
+            background: linear-gradient(to right, #667eea, #9061be);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 40px;
+            width: 250px;
+            border: 2px solid papayawhip;
+            box-shadow: 10px 10px 20px rgba(174, 17, 17, 0.2);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="flipBtn">Flip Color</button>
+    <script src="script.js"></script>
+</body>
+</html>
