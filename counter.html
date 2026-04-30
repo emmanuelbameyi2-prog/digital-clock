@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+             height: 80px;
+            background: linear-gradient(to right, #667eea, #9061be);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 40px;
+            width: 250px;
+            border: 2px solid papayawhip;
+            box-shadow: 10px 10px 20px rgba(174, 17, 17, 0.2);
+            color: white;
+        }
+        #counter {
+            font-size: 55px;
+            margin: 20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 20px;
+             box-shadow: 10px 10px 20px rgba(174, 17, 17, 0.2);
+             border-color: green;
+             font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <button id="decrease">Decrease</button>
+    <span id="counter">0</span>
+    <button id="increase">Increase</button>
+
+    <script>
+        const decreaseBtn = document.getElementById('decrease');
+        const increaseBtn = document.getElementById('increase');
+        const counterDisplay = document.getElementById('counter');
+
+        let count = 0;
+
+        decreaseBtn.addEventListener('click', () => {
+            count--;
+            counterDisplay.textContent = count;
+        });
+
+        increaseBtn.addEventListener('click', () => {
+            count++;
+            counterDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>
